@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      div {
+        font-family: 'Itim', cursive;
+      }
+      p {
+        font-family: 'Itim', cursive;
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <!-- 相片輪播元件 -->
+    <div
+      id="photoCarousel"
+      class="carousel slide vertical"
+      data-ride="carousel"
+    >
+      <!--建立輪播元件.立即啟用功能-->
+      <!-- Indicators 瀏覽控制 -->
+      <ol class="carousel-indicators" style="margin-top: 50px">
+        <!--顯示目前觀看的圓圈-->
+        <li data-target="#photoCarousel" data-slide-to="0" class="active"></li>
+        <!--第一個圓-->
+        <li data-target="#photoCarousel" data-slide-to="1"></li>
+        <li data-target="#photoCarousel" data-slide-to="2"></li>
+      </ol>
+      <!-- 建立相片清單 -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="./0507img/IMG_1632.jpg" />
+        </div>
+        <div class="item">
+          <img src="./0507img/IMG_1633.jpg" />
+        </div>
+        <div class="item">
+          <img src="./0507img/IMG_1636.jpg" />
+        </div>
+      </div>
+      <!-- 上一張/下一張控制 -->
+      <a class="left carousel-control" href="#photoCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span></a
+      ><!--<切到前一張-->
+      <a class="right carousel-control" href="#photoCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span></a
+      ><!--<切到後一張-->
+    </div>
+
+    <p>之前作業</p>
+    <nav class="navbar navbar-default">
+      <!--白底黑字樣式-->
+      <div
+        id="mynav"
+        class="navbar-collapse collapse"
+        style="font-family: 'Itim', cursive"
+      >
+        <!--設定collapse格式.畫面小於768px時會隱藏-->
+        <ul class="navbar-nav nav">
+          <!--清單內容以橫向選單方式呈現-->
+          <li>
+            <a href="./HW1/408411055洪聞輔.html"><!-- 選單項目 1 -->HW1</a>
+          </li>
+          <li>
+            <a href="./HW2/408411055.html"><!-- 選單項目 2 -->HW2</a>
+          </li>
+          <li>
+            <a href="./HW3/test.html"><!-- 選單項目 3 -->HW3</a>
+          </li>
+          <li>
+            <a href="./HW7/0514.html"><!-- 選單項目 4 -->HW7</a>
+          </li>
+          <li>
+            <a href="./HW8/408411055HW8.html"><!-- 選單項目 5 -->HW8</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
